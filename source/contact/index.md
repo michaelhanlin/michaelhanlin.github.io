@@ -9,13 +9,15 @@ date: 2017-05-09 14:56:50
         <input class="input" type="text" name="name" placeholder="你的名字" required>
     </fieldset>
     <fieldset class="field">
-        <input class="input" type="email" name="from" placeholder="yourname@example.com" required>
-        <label class="label" for="from"><span class="label-content">你的邮箱（仅用于回复你的消息）</span></label>
+        <input class="input" type="email" name="_replyto" placeholder="yourname@example.com" required>
+        <label class="label" for="_replyto"><span class="label-content">你的邮箱（仅用于回复你的消息）</span></label>
     </fieldset>
     <fieldset class="field">
         <label class="label" for="message"><span class="label-content">你的留言</span></label>
         <textarea class="input" name="message" cols="1" rows="10" placeholder="留言内容" required></textarea>
     </fieldset>
+    <input class="hidden" type="text" name="_gotcha" style="display:none">
+    <input class="hidden" type="hidden" name="_subject" value="来自 <%= config.url %> 的留言">
     <fieldset class="field field-button">
         <input class="button submit" type="submit" value="发送">
     </fieldset>
