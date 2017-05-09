@@ -32,6 +32,7 @@ More info: [Generating](https://hexo.io/docs/generating.html)
 
 ### Deploy to remote sites
 
+    $ hexo clean
     $ hexo deploy
 
 
@@ -42,5 +43,5 @@ Check [documentation](https://hexo.io/docs/) for more info. If you get any probl
 ## Referenes
 
 * http://bowtiebeej.com/Adding-a-Contact-Form-in-Hexo/
-
+* [Use hexo](https://gist.github.com/btfak/18938572f5df000ebe06fbd1872e4e39)
 
