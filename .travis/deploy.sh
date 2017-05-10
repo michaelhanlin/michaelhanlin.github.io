@@ -7,8 +7,9 @@ setup_git() {
 
 commit_website_files() {
     mv public /tmp/public
+    git remote update
     git checkout master
-    rm *
+    rm -fr *
     cp -r /tmp/public/* .
     git add .
     git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
