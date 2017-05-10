@@ -23,7 +23,7 @@ commit_website_files() {
     cp -r $BUILD_DIR/* $DEPLOY_DIR/
 
     cd $DEPLOY_DIR
-
+    git status
     git add .
     git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
 
