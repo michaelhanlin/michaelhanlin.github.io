@@ -1,5 +1,6 @@
 #!/bin/sh
 
+BUILD_DIR=public
 DEPLOY_DIR=.deploy_git
 
 setup_git() {
@@ -8,7 +9,7 @@ setup_git() {
 
     git clone https://${REPO_TOKEN}@github.com/michaelhanlin/michaelhanlin.github.io.git $DEPLOY_DIR
 
-    git rev-parse --short HEAD > $DEPLOY_DIR/version.txt
+    git rev-parse --short HEAD > $BUILD_DIR/version.txt
 
     (cd $DEPLOY_DIR; git branch; git branch -a; git checkout master)
 }
@@ -19,7 +20,7 @@ commit_website_files() {
     #git checkout master
     #rm -fr *
     rm -fr $DEPLOY_DIR/*
-    cp -r public/* $DEPLOY_DIR/
+    cp -r $BUILD_DIR/* $DEPLOY_DIR/
 
     cd $DEPLOY_DIR
 
