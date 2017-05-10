@@ -1,0 +1,10 @@
+lang: node_js
+node_js:
+  - "7"
+
+before_script:
+  - npm install -g hexo-cli
+install:
+  - npm install
+script:
+  - hexo generate
