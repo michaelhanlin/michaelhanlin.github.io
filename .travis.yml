@@ -1,10 +1,16 @@
 lang: node_js
 node_js:
-  - "7"
-
+- '7'
+branches:
+  only:
+  - src
 before_script:
-  - npm install -g hexo-cli
+- npm install -g hexo-cli
 install:
-  - npm install
+- npm install
 script:
-  - hexo generate
+- hexo generate
+env:
+  global:
+  - secure: N5qItzRLOSrxiLzMCplyw2pKZOn9YhcT5qoj9Td+gJ8hDuVttwka4uP6fdlJC2vMc6t8POIea68qYJX63+7ohQlMbtqOoVLPYY8iPV9x78Y/zG4DQlBHQlGjNTifiFpHF+45ECo8U6wE2z81TTmoh6uHRMb8FBsVl4W/eFGez3EjCS7tkV63/7y8yQ2/pdlsTqIPpLZ/gTotKtMTYXzmKy8RhrwPJYRCtWrjykQO13XZMLDVSLeF5zv9DnZaLzM4iXkxKPncS0ZMT032CL2hrkr1RvFGz8HfYgQQrbbHb1y315fgFb/nKViv07COujhSWKHgvg/GZgJ5xH9HJOQfOIPss4JWFoZMwO7N38iqStSqoS/Nf0P3r3BkebTHjc1ymMyVmnukQApUaHheXOpAsP9pDx3UDAt1VpuZbBck94H6hD6SylsifWTHq/ZER0LbAEzaUGZk/9Br6VQiTe/6t/gEq80SwMJBgQaca13npFOoBAoI2hrhaf1Hje42DlxBgw0i4zfHJdc+pkawsA7iVH4ZH14VPQU0JqD8WHsmdCiWnWzk532skLNP6BJp/iLfkEkcacq+m8cP7qsGHoIJwWeZIiEQdhvRp3kq67gTpTXrxMEq6L+SBtfibrLH/hPOVTUwtrBm73jBI1hRZ4iw9qqQhTfztnpZgaMaEQPYgH8=
+  - secure: ijG/0q6UtNlqjSRFHmPjpvnKd00WSlhL65TiJ9cIAPTDBxzP9BIsclnuKnEsNTodKIFYfn3L/qbmfr1hXlDqVT6sCwEqERIDStV5T1DcLVTFEsLqtXd1n4TKaWoNaAhRngRF6lZjtuRHoOFdBx4Qj+KkoL/V7vjeEBn/SXeTLqUeQT2hDvPSb+b5VXq+Wwsa5qIAvVCCsj5oujylG0OFgPARkTB0G9NK+FYiowlx40fKd4txFP/DHSR/KhiHFAl4hNdh53RHbFpqVeFXjRH14ZRT7x9XbpsooWZQd4HV7dPzIKOIMmBN6Njviu5vvdp+ejbz1JHAgFwh3ZpmfJGJRWVvYt5ro9p+R0WVPYBJ7hd83SoNr6LbrWmm4SBNN4gzMz1QYJtqeJSya52JxiB04bTRXGW6PXjhm5Vfk+E1mJ9MxrzDW2eWRDL9EqzZ7SBDY0eW9Ugp+jGXrk7b0Zjrmv48XuuePqY1I1gR4a89tBcF3Q1CWWxx4GmwRw9TkOW+QGUm/cejPLzCp6XxLhDY1ykthorDrbtCEdQ2po2Nx6HlXJFyUIV6S1jmYqtnOW/tgdNTl2jv6/vY+kwnW86PkUWnCJA0vaDMT9LDy7n6C6JOKE3oNsBZkoubGl9cm0E6+5LO38YOeabVaylND/j1pKq/e3U67a0ZCOYwkMOcbpE=
