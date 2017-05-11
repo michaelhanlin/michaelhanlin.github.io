@@ -13,5 +13,5 @@
     2013.07.30-fish.md
     2013.05.01-violin-and-flowers.md
 
-第四步，等待10分钟后刷新https://michaelhanlin.github.io/，新上传的图片就应该能显示出来了。
+第四步，等待10分钟后刷新[michaelhanlin.github.io](https://michaelhanlin.github.io)，新上传的图片就应该能显示出来了。
 
