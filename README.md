@@ -1,52 +1,17 @@
-## Quick Start
 
-### Theme
+## 如何上传图片并显示？
 
-https://github.com/sharvaridesai/hexo-theme-edinburgh
+第一步，登录 http://github.com
 
+第二步，在这个[页面](https://github.com/michaelhanlin/michaelhanlin.github.io/tree/src/source/images)使用`Upload file`按钮上面上传图片，图片的文件名需要按YYYY.mm.dd-name来命名，比如：
 
-### Create a new post
+    2013.07.30-fish.png
+    2013.05.01-violin-and-flowers.png
 
-New page:
+第三步，在这个[页面](https://github.com/michaelhanlin/michaelhanlin.github.io/tree/src/source/_posts)使用`Create new file`来创建新的文件，文件名规则同图片等命名规则，但是扩展名为`.md`，比如：
 
-    $ hexo new page "about"
-    $ hexo new page "contact"
+    2013.07.30-fish.md
+    2013.05.01-violin-and-flowers.md
 
-New post:
+第四步，等待10分钟后刷新https://michaelhanlin.github.io/，新上传的图片就应该能显示出来了。
 
-    $ hexo new "My New Post"
-
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-    $ hexo server
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-    $ hexo generate
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-    $ hexo clean
-    $ hexo deploy
-
-
-More info: [Deployment](https://hexo.io/docs/deployment.html)
-Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
-
-
-### Add encrypted token to .travis.yml
-
-    travis encrypt REPO_TOKEN=<token> --add
-
-
-## Referenes
-
-* http://bowtiebeej.com/Adding-a-Contact-Form-in-Hexo/
-* [Use hexo](https://gist.github.com/btfak/18938572f5df000ebe06fbd1872e4e39)
-* [Pushing to github from TravisCI](https://gist.github.com/willprice/e07efd73fb7f13f917ea)
